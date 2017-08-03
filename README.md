@@ -1,0 +1,1 @@
+This map allows you to save your journeys by coloring the countries you have travelled
