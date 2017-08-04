@@ -15,3 +15,11 @@ html, body {
     width: 1091px;
     height: 750px;
 }
+
+.default{
+    fill: #ffffff;
+}
+
+.default.coloured{
+    fill:blue;
+}

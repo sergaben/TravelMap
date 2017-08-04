@@ -30,28 +30,16 @@ if(isset($_SERVER['HTTPS']))
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css" integrity="sha256-itWEYdFWzZPBG78bJOOiQIn06QCgN/F0wMDcC4nOhxY=" crossorigin="anonymous" />
-<!--
-        <script src='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/js/foundation.min.js" integrity="sha256-Nd2xznOkrE9HkrAMi4xWy/hXkQraXioBg9iYsBrcFrs=" crossorigin="anonymous"></script>
--->
+
         <link type="text/css" rel="stylesheet" href="css/main.css">
     </head>
     <body>
-<!--       style="position: absolute;top:0;bottom:0; width:100%"-->
+
        <div id='map' class="worldMap"></div>
         <h3 id="region-name"></h3>
+        <button id='saveButton'>Save</button>
         <script src="raphael.min.js"></script>
-        <script src="world.js"></script>
-<!--
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1Ijoia2Fpc29rdWFvIiwiYSI6ImNqNGxvdG9pZjE1cmkzM251aXlobnc5b2UifQ.K8WRpeOJWaalpLaDxuRwhA';
-            var map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/mapbox/streets-v9',
-            });
-        </script>
--->
+        <script src="world.js?v=789"></script>
+
     </body>
 </html>
