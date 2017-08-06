@@ -34,12 +34,18 @@ if(isset($_SERVER['HTTPS']))
         <link type="text/css" rel="stylesheet" href="css/main.css">
     </head>
     <body>
-
-       <div id='map' class="worldMap"></div>
+       
+        <div id="Modal-Instructions" class ="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Right click for select the country that you want to highlight</p> 
+            </div>
+        </div>
+        <div id='map' class="worldMap"></div>
         <h3 id="region-name"></h3>
         <button id='saveButton'>Save</button>
         <script src="raphael.min.js"></script>
         <script src="world.js?v=789"></script>
-
+        <script src="scripts.js"></script>
     </body>
 </html>
