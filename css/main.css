@@ -1,27 +1,66 @@
 html, body {
-            height: 100%;
-            margin: 0;
-        }
-
+    height: 100%;
+    margin: 0;
+}
 .centerText{
     text-align: center;
-    
+
 }
 .worldMap{
     position: absolute;
     top: 0;
     margin-left: 20%;
+    margin-top: 2%;
+    margin-right: 20%;
     bottom: 0;
     width: 1091px;
     height: 750px;
 }
-
-.default{
-    fill: #ffffff;
+.inline{
+    display: inline;
+    position: absolute;
+    text-align: unset;
+    margin-left: 14%;
 }
-
-.default.coloured{
+.legend{
+    position: relative;
+    left: 0;
+    width: 21%;
+    height: 100px;
+    margin-left: 2%;
+    bottom: 12%;
+}
+.default{
+    fill: #00e5ee;
+}
+.visitedCountry{
+    background: blue;
+    width: 9%;
+    height: 30%;
+    border-style: solid;
+    margin-bottom: 4%;
+    border-width: 2px;
+}
+.unvisitedCountry{
+    background: #2de7f7;
+    width: 9%;
+    height: 30%;
+    border-style: solid;
+    margin-bottom: 4%;
+    border-width: 2px;
+}
+.wantToVisitCountry{
+    background: red;
+    width: 9%;
+    height: 30%;
+    border-style: solid;
+    border-width: 2px;
+}
+.coloured{
     fill:blue;
+}
+.thirdColor{
+    fill:red;
 }
 .modal{
     display: none; /* Hidden by default */
@@ -47,4 +86,66 @@ html, body {
     float: right;
     font-size: 28px;
     font-weight: bold;
+}
+.sidenav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    background-color: #2b08eb;
+    overflow-x:hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s
+}
+#mainContent{
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+i {
+    border: solid #000000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: 0.5s;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+.openNav{
+    position: fixed;
+    margin-top: 23%;
+    transition: 0.5s;
 }
