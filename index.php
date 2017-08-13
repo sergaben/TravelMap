@@ -61,9 +61,9 @@
             }
 
         </script>
-        <script src="raphael.min.js"></script>
-        <script src="raphael-svg-import.js"></script>
-        <script src="world.js?v=789"></script>
-        <script src="scripts.js?v=230"></script>
+        <script src="scripts/raphael.min.js"></script>
+        <script src="scripts/raphael-svg-import.js"></script>
+        <script src="scripts/world.js"></script>
+        <script src="scripts/scripts.js"></script>
     </body>
 </html>
